@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f3f3f3;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* رنگ‌های سبز برای مربع‌ها */
+.tile-0 {
+    background: #ccc;
+}
+
+.tile-2 {
+    background: rgba(144, 238, 144, 0.3); /* روشن‌تر کردن سبز */
+    color: #000; /* تغییر رنگ متن به مشکی برای کنتراست بیشتر */
+}
+
+.tile-4 {
+    background: rgba(144, 238, 144, 0.5); /* کمی روشن‌تر کردن پس‌زمینه */
+    color: #000; /* تغییر رنگ متن به مشکی */
+}
+
+.tile-8 {
+    background: rgba(0, 128, 0, 0.5); /* سبز متوسط */
+}
+
+.tile-16 {
+    background: rgba(0, 128, 0, 0.7); /* سبز کمی تیره‌تر */
+}
+
+.tile-32 {
+    background: rgba(34, 139, 34, 0.8); /* سبز تیره */
+}
+
+.tile-64 {
+    background: rgba(34, 139, 34, 1); /* سبز پررنگ */
+}
+
+.tile-128 {
+    background: rgba(0, 255, 0, 0.85); /* سبز روشن نهایی */
+}
+
+.tile-256, .tile-512, .tile-1024, .tile-2048 {
+    background: rgba(0, 255, 0, 1); /* سبز کاملاً روشن */
+}
